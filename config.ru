@@ -1,0 +1,2 @@
+require './drlaminator'
+run DrLaminator
