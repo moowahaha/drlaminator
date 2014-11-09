@@ -1,0 +1,93 @@
+@import 'bourbon/bourbon'
+
+$primary_color: #ff0000
+$light_font: whitesmoke
+$secondary_light_font: #a8d3ff
+
+html, body
+  height: 100%
+  min-height: 100%
+  min-width: 700px
+
+body
+  font-family: $helvetica
+  font-size: golden-ratio(12px,  1)
+  margin: 0
+  @include background(linear-gradient($primary_color, #870000) top repeat)
+
+h1, h2
+  margin: 0
+  padding: 0
+
+.header-row, .content-row, .footer-row
+  width: 90%
+  margin: 0 auto
+
+.header-row
+  @include clearfix
+  color: $light_font
+  padding: 2% 0
+
+  a, a:visited, a:active
+    color: $light_font
+
+  a:hover
+    color: $secondary_light_font
+
+  .left-block
+    float: left
+    width: 50%
+
+    h1
+      a
+        text-shadow: 3px 3px #850000
+        text-decoration: none
+
+    .sub-heading
+      font-size: 75%
+      font-family: $georgia
+      font-style: italic
+
+  .right-block
+    float: right
+    width: 50%
+
+    .inner-block
+      float: right
+
+    .etsy-link
+      @include button(shiny, orange)
+      margin-left: 10px
+
+    .testimonials-link, .home-link
+      margin: 8px 10px
+
+.footer-row
+  padding-top: 30px
+  font-size: 70%
+  color: $light_font
+  text-align: center
+
+
+.content-row
+  @include clearfix
+  background-color: whitesmoke
+  box-shadow: black 2px 2px 10px
+  @include background(linear-gradient($secondary_light_font, whitesmoke) top repeat)
+  @include border-top-radius(5px)
+  @include border-bottom-radius(5px)
+  @include border-left-radius(5px)
+  @include border-right-radius(5px)
+
+  .home
+    padding: 2%
+    .left-block
+      width: 66%
+      float: left
+
+      h2
+        color: $primary_color
+
+    .right-block
+      width: 33%
+      float: right

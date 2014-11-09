@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %title
+      Dr. Laminator -
+      =yield_content :title
+
+    =css :application
+
+  %body
+    .header-row
+      .left-block
+        %h1
+          %a{href: '/', rel: 'canonical'}
+            Dr. Laminator
+
+        .sub-heading
+          Helvetica wrapped in plastic since 1906
+
+      .right-block
+        %a.etsy-link.inner-block{href: 'https://www.etsy.com/shop/DrLaminator', target: '_blank'}
+          Buy on Etsy
+
+        %a.testimonials-link.inner-block{href: '/testimonials'}
+          Testimonials
+
+        %a.home-link.inner-block{href: '/'}
+          Home
+
+    .content-row
+      =yield
+
+    .footer-row
+      = yield_content :footer_text
