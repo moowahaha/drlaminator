@@ -12,11 +12,14 @@ body
   font-family: $helvetica
   font-size: golden-ratio(12px,  1)
   margin: 0
-  @include background(linear-gradient($primary_color, #870000) top repeat)
+  @include background(linear-gradient($primary_color, #690000) top repeat)
 
 h1, h2, h3
   margin: 0
   padding: 0
+
+h2
+  color: $primary_color
 
 .header-row, .content-row, .footer-row
   width: 90%
@@ -93,9 +96,6 @@ h1, h2, h3
       width: 64%
       float: left
 
-      h2
-        color: $primary_color
-
     .right-block
       padding-left: 10px
       float: right
@@ -103,11 +103,54 @@ h1, h2, h3
       min-width: 350px
 
       .block
-        padding-bottom: 10px
+        padding-bottom: 20px
 
         h3
           padding-bottom: 20px
 
+          a, a:visited, a:active
+            color: inherit
+            text-decoration: none
+
+          a:hover
+            text-decoration: underline
+
+
     .sign-off
       font-family: "comic Sans MS"
       font-style: italic
+
+.testimonials
+  padding: 2%
+
+  .heading
+    @include clearfix
+    h2
+      min-width: 300px
+      width: 64%
+      float: left
+
+    img
+      padding-left: 10px
+      float: right
+      width: 30%
+      min-width: 350px
+
+  .interviews
+    @include clearfix
+    padding-top: 2%
+    .cell
+      padding: 10px
+      width: 287px
+      float: left
+
+      img
+        border: 10px solid $secondary_light_font
+
+      .quote
+        font-family: $georgia
+        font-style: italic
+        padding: 15px 0
+
+      .attributed
+        font-size: 75%

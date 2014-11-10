@@ -24,4 +24,8 @@ class DrLaminator < Sinatra::Base
   get '/' do
     haml :index, format: :html5
   end
+
+  get '/testimonials' do
+    haml :testimonials, format: :html5
+  end
 end
