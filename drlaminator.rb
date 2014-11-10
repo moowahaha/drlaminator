@@ -11,6 +11,7 @@ class DrLaminator < Sinatra::Base
   register Sinatra::Reloader if self.development?
 
   assets do
+    serve '/images', from: 'images'
     serve '/css', from: 'css'
 
     css :application, [
