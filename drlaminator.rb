@@ -6,6 +6,8 @@ require 'haml'
 require 'sass'
 
 class DrLaminator < Sinatra::Base
+  ETSY_URL = 'https://www.etsy.com/listing/211052681/custom-laminated-helvetica-message'
+
   register Sinatra::AssetPack
   helpers Sinatra::ContentFor
   register Sinatra::Reloader if self.development?
