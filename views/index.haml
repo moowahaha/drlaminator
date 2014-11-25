@@ -41,18 +41,18 @@
   .right-block
     .block
       %h3
+        Watch the commercial
+        %i
+          "Laminating Dreams"
+      %iframe{allowscriptaccess: 'always', allowFullScreen: 'true', frameborder: '0', height: '191', width: '340', src: "http://www.youtube.com/embed/9QR1o2p0jn4"}
+
+    .block
+      %h3
         %a{href: ETSY_URL, target: '_blank', rel: 'canonical'}
           Order NOW on Etsy!
 
       %a{href: ETSY_URL, target: '_blank'}
         %img{src: '/images/explanation_sign.png'}
-
-    .block
-      %h3
-        Watch the commercial
-        %i
-          "Laminating Dreams"
-      %iframe{allowscriptaccess: 'always', allowFullScreen: 'true', frameborder: '0', height: '191', width: '340', src: "http://www.youtube.com/embed/XJUBwNguJpQ"}
 
 -content_for :footer_text do
   %p
