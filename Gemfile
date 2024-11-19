@@ -3,10 +3,10 @@ source "https://rubygems.org"
 
 ruby '2.1.4'
 
-gem 'sinatra'
+gem 'sinatra', '>= 4.1.0'
 gem 'sinatra-assetpack'
 gem 'haml'
-gem 'sinatra-contrib'
+gem 'sinatra-contrib', '>= 4.1.0'
 gem 'sass'
 gem 'bourbon'
 
