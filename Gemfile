@@ -8,7 +8,7 @@ gem 'sinatra-assetpack'
 gem 'haml'
 gem 'sinatra-contrib'
 gem 'sass'
-gem 'bourbon'
+gem 'bourbon', '>= 4.1.0'
 
 group :development do
   gem 'sinatra-reloader'
